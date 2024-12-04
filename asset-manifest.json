@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Enrico-collab/beleza-pura.git/static/css/main.f50ee997.css",
+    "main.js": "/Enrico-collab/beleza-pura.git/static/js/main.666ea9ea.js",
+    "static/js/453.694c1744.chunk.js": "/Enrico-collab/beleza-pura.git/static/js/453.694c1744.chunk.js",
+    "static/media/banner-agendamento.png": "/Enrico-collab/beleza-pura.git/static/media/banner-agendamento.f5dc704f2aa9971c5b2d.png",
+    "static/media/banner-principal.webp": "/Enrico-collab/beleza-pura.git/static/media/banner-principal.69b598fb68ca8ebda874.webp",
+    "index.html": "/Enrico-collab/beleza-pura.git/index.html",
+    "main.f50ee997.css.map": "/Enrico-collab/beleza-pura.git/static/css/main.f50ee997.css.map",
+    "main.666ea9ea.js.map": "/Enrico-collab/beleza-pura.git/static/js/main.666ea9ea.js.map",
+    "453.694c1744.chunk.js.map": "/Enrico-collab/beleza-pura.git/static/js/453.694c1744.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f50ee997.css",
+    "static/js/main.666ea9ea.js"
+  ]
+}
