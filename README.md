@@ -7,9 +7,13 @@ Este projeto consiste em um site de página única para um salão de beleza loca
 As tecnologias utilizadas neste projeto incluem:
 
 **HTML e CSS:** Para estruturar e estilizar a página, criando uma interface simples e responsiva.
+
 **React.js:** Utilizado para construir a interface interativa e modular, proporcionando uma experiência dinâmica ao usuário.
+
 **Git:** Para controle de versão e gerenciamento do código durante o desenvolvimento.
+
 **GitHub:** Para hospedar o código fonte do projeto.
+
 **GitHub Pages: **Para publicar o site de forma gratuita e acessível online.
 
 ## Funcionalidades
