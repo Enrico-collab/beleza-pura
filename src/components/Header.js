@@ -8,12 +8,11 @@ const Header = () => {
 
   return (
     <header>
-      {/* Logo */}
       <a href="#home">
         <img
-          src="./img/logo-beleza-pura.png"
-          alt="Logo do Site"
           className="logo"
+          src={`${process.env.PUBLIC_URL}/img/logo-beleza-pura.png`}
+          alt="Descrição"
         />
       </a>
 
@@ -48,11 +47,11 @@ const Header = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Agendar{" "}
+              Agendar{""}
               <img
-                src="./img/icone-whatsapp.png"
-                alt="WhatsApp"
                 className="whatsapp-icon"
+                src={`${process.env.PUBLIC_URL}/img/icone-whatsapp.png`}
+                alt="Descrição"
               />
             </a>
           </li>

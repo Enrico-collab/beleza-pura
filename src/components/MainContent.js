@@ -44,7 +44,11 @@ const MainContent = () => {
           </p>
         </div>
         <div className="bem-vindo-coluna direita">
-          <img src="./img/bem-vindo.png" alt="Descrição da Imagem" />
+          <img
+            className="whatsapp-icon"
+            src={`${process.env.PUBLIC_URL}/img/bem-vindo.png`}
+            alt="Descrição"
+          />
         </div>
       </section>
 
@@ -54,14 +58,20 @@ const MainContent = () => {
           {/* Coluna Esquerda */}
           <div className="servicos-coluna-esquerda">
             <div className="caixinha-servicos-coluna-esquerda">
-              <img src="./img/Manicure.webp" alt="Imagem 1" />
+              <img
+                src={`${process.env.PUBLIC_URL}/img/Manicure.webp`}
+                alt="Imagem de manicure"
+              />
               <div className="titulo-servicos-coluna-esquerda">
                 <h3>Manicure e Pedicure</h3>
                 <p>Renove sua pele e realce sua beleza.</p>
               </div>
             </div>
             <div className="caixinha-servicos-coluna-esquerda">
-              <img src="./img/depilacao-estetica.jpg" alt="Imagem 1" />
+              <img
+                src={`${process.env.PUBLIC_URL}/img/depilacao-estetica.jpg`}
+                alt="Imagem de depilação e estetica"
+              />
               <div className="titulo-servicos-coluna-esquerda">
                 <h3>Depilação e Estética</h3>
                 <p>
@@ -71,12 +81,28 @@ const MainContent = () => {
               </div>
             </div>
             <div className="caixinha-servicos-coluna-esquerda">
-              <img src="./img/biomedica-3.jpg" alt="Imagem 1" />
+              <img
+                src={`${process.env.PUBLIC_URL}/img/biomedica-3.jpg`}
+                alt="Imagem de biomédica"
+              />
               <div className="titulo-servicos-coluna-esquerda">
                 <h3>Biomédica</h3>
                 <p>
                   Preenchimento labial, botox e muito mais. Cuidados que realçam
                   sua beleza e bem-estar, como você merece!
+                </p>
+              </div>
+            </div>
+            <div className="caixinha-servicos-coluna-esquerda">
+              <img
+                src={`${process.env.PUBLIC_URL}/img/cabelos-e-penteados.jpg`}
+                alt="Imagem de biomédica"
+              />
+              <div className="titulo-servicos-coluna-esquerda">
+                <h3>Cabelos e Penteados</h3>
+                <p>
+                  Transforme seu visual com cortes, coloração e tratamentos
+                  exclusivos para realçar a beleza dos seus cabaloes.
                 </p>
               </div>
             </div>
@@ -110,7 +136,7 @@ const MainContent = () => {
             ONDE ESTAMOS?
             <span className="icon">
               <img
-                src="./img/icone-localizacao.png"
+                src={`${process.env.PUBLIC_URL}/img/icone-localizacao.png`}
                 alt="Ícone de localização"
               />
             </span>
@@ -168,9 +194,9 @@ const MainContent = () => {
             >
               WHATSAPP{" "}
               <img
-                src="./img/icone-whatsapp.png"
-                alt="WhatsApp"
                 className="whatsapp-icon"
+                src={`${process.env.PUBLIC_URL}/img/icone-whatsapp.png`}
+                alt="Ícone do whatsapp"
               />
             </a>
           </div>
@@ -185,9 +211,9 @@ const MainContent = () => {
           {/* Depoimento 1 */}
           <article className="depoimento">
             <img
-              src="./img/nay-santos.png"
-              alt="Foto do cliente"
               className="cliente-foto"
+              src={`${process.env.PUBLIC_URL}/img/nay-santos.png`}
+              alt="Foto do cliente"
             />
             <h3>Nay Santos</h3>
             <p className="cliente-avaliacoes">15 avaliações</p>
@@ -200,9 +226,9 @@ const MainContent = () => {
           {/* Depoimento 2 */}
           <article className="depoimento">
             <img
-              src="./img/marcio-tucillo.png"
-              alt="Foto do cliente"
               className="cliente-foto"
+              src={`${process.env.PUBLIC_URL}/img/marcio-tucillo.png`}
+              alt="Foto do cliente"
             />
             <h3>Marcio Tucillo</h3>
             <p className="cliente-avaliacoes">20 avaliações</p>
@@ -215,9 +241,9 @@ const MainContent = () => {
           {/* Depoimento 3 */}
           <article className="depoimento">
             <img
-              src="./img/anselmo-cordeiro.png"
-              alt="Foto do cliente"
               className="cliente-foto"
+              src={`${process.env.PUBLIC_URL}/img/anselmo-cordeiro.png`}
+              alt="Foto do cliente"
             />
             <h3>Anselmo Cordeiro</h3>
             <p className="cliente-avaliacoes">30 avaliações</p>
