@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Beleza Pura - Salão de Beleza
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto consiste em um site de página única para um salão de beleza localizado na Vila Formosa - São Paulo/SP. A empresa não tinha uma presença online, uma vez que o salão não tinha um site para apresentar seus serviços e atrair clientes. A plataforma oferece uma forma simples e eficiente de comunicação com os clientes, destacando os serviços oferecidos, informações de contato e localização.
 
-## Available Scripts
+## Tecnologias Utilizadas
 
-In the project directory, you can run:
+As tecnologias utilizadas neste projeto incluem:
 
-### `npm start`
+**HTML e CSS:** Para estruturar e estilizar a página, criando uma interface simples e responsiva.
+**React.js:** Utilizado para construir a interface interativa e modular, proporcionando uma experiência dinâmica ao usuário.
+**Git:** Para controle de versão e gerenciamento do código durante o desenvolvimento.
+**GitHub:** Para hospedar o código fonte do projeto.
+**GitHub Pages: **Para publicar o site de forma gratuita e acessível online.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Funcionalidades
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+As principais funcionalidades do site são:
 
-### `npm test`
+**Página Única (One-Page):** O site é estruturado como uma página única, proporcionando uma navegação simples e rápida, sem a necessidade de múltiplos cliques para acessar informações essenciais.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Menu Simples com Links e botão:** O site conta com um menu de navegação claro e objetivo, permitindo ao usuário acessar rapidamente as principais seções, como serviços, contato e localização além de um botão para agendamento.
 
-### `npm run build`
+**Seções com CTA (Chamadas para Ação):** O site possui 3 seções para botões de ação (CTAs) estratégicos, incentivando os visitantes a entrarem em contato ou agendarem um serviço.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Localização e Botão de WhatsApp Direto:** A seção de localização exibe o endereço do salão e inclui um botão para contato direto via WhatsApp, facilitando a comunicação com os clientes.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Responsividade e Design Adaptável:** O site é totalmente responsivo, garantindo uma experiência de navegação otimizada tanto em dispositivos móveis quanto em desktops, com um design que se ajusta automaticamente às diferentes telas.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Como rodar o projeto
 
-### `npm run eject`
+1. Clone o repositório;
+2. Navegue até a pasta do projeto (beleza-pura);
+3. Instale as dependências (npm install);
+4. Execute o projeto localmente (npm start);
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Autor
+Enrico Clemente Amoroso
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
