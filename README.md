@@ -30,7 +30,7 @@ As principais funcionalidades do site são:
 
 **Responsividade e Design Adaptável:** O site é totalmente responsivo, garantindo uma experiência de navegação otimizada tanto em dispositivos móveis quanto em desktops, com um design que se ajusta automaticamente às diferentes telas.
 
-##**Acesse o projeto através do link:** https://enrico-collab.github.io/beleza-pura/
+#**Acesse o projeto através do link:** https://enrico-collab.github.io/beleza-pura/
 
 # Como rodar o projeto
 
