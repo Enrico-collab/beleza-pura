@@ -44,4 +44,54 @@ https://enrico-collab.github.io/beleza-pura/
 # Autor
 Enrico Clemente Amoroso
 
+__________________________________________________________________________________________________________
+
+# Beleza Pura - Beauty Salon
+
+This project consists of a single-page website for a beauty salon located in Vila Formosa - São Paulo/SP. The business had no online presence, as the salon did not have a website to showcase its services and attract customers. The platform provides a simple and efficient way of communicating with customers, highlighting the services offered, contact information, and location.
+
+## Technologies Used
+
+The technologies used in this project include:
+
+**HTML and CSS:** For structuring and styling the page, creating a simple and responsive interface.
+
+**React.js:** Used to build the interactive and modular interface, providing a dynamic user experience.
+
+**Git:** For version control and code management during development.
+
+**GitHub:** To host the project's source code.
+
+**GitHub Pages:** To publish the site for free and make it accessible online.
+
+## Features
+
+The main features of the website are:
+
+**Single-Page Website:** The site is structured as a single page, providing simple and fast navigation without the need for multiple clicks to access essential information.
+
+**Simple Menu with Links and Button::** The site has a clear and straightforward navigation menu, allowing the user to quickly access the main sections, such as services, contact, and location, as well as a button for booking.
+
+**Sections with CTA (Call to Action)::** The site features 3 sections with strategic CTA buttons, encouraging visitors to get in touch or book a service.
+
+**Location and Direct WhatsApp Button: :** The location section displays the salon's address and includes a button for direct contact via WhatsApp, making it easy for customers to reach out.
+
+**Responsiveness and Adaptive Design::** The site is fully responsive, ensuring an optimized browsing experience on both mobile devices and desktops, with a design that automatically adjusts to different screen sizes.
+
+# **Access the project through the link::** 
+
+https://enrico-collab.github.io/beleza-pura/
+
+# How to run the project
+Como rodar o projeto
+
+1. Clone the repository;
+2. Navigate to the project folder (beleza-pura);
+3. Install the dependencies (npm install);
+4. Run the project locally (npm start);
+
+# Author
+Enrico Clemente Amoroso
+
+
 
