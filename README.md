@@ -14,7 +14,7 @@ As tecnologias utilizadas neste projeto incluem:
 
 **GitHub:** Para hospedar o código fonte do projeto.
 
-**GitHub Pages: **Para publicar o site de forma gratuita e acessível online.
+**GitHub Pages:** Para publicar o site de forma gratuita e acessível online.
 
 ## Funcionalidades
 
