@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/beleza-pura/static/css/main.f7e7bcc2.css",
-    "main.js": "/beleza-pura/static/js/main.63ee2ea7.js",
+    "main.js": "/beleza-pura/static/js/main.74c158b6.js",
     "static/js/453.694c1744.chunk.js": "/beleza-pura/static/js/453.694c1744.chunk.js",
     "static/media/banner-agendamento.png": "/beleza-pura/static/media/banner-agendamento.f5dc704f2aa9971c5b2d.png",
     "static/media/banner-principal.webp": "/beleza-pura/static/media/banner-principal.69b598fb68ca8ebda874.webp",
     "index.html": "/beleza-pura/index.html",
     "main.f7e7bcc2.css.map": "/beleza-pura/static/css/main.f7e7bcc2.css.map",
-    "main.63ee2ea7.js.map": "/beleza-pura/static/js/main.63ee2ea7.js.map",
+    "main.74c158b6.js.map": "/beleza-pura/static/js/main.74c158b6.js.map",
     "453.694c1744.chunk.js.map": "/beleza-pura/static/js/453.694c1744.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f7e7bcc2.css",
-    "static/js/main.63ee2ea7.js"
+    "static/js/main.74c158b6.js"
   ]
 }
