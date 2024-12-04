@@ -1,6 +1,6 @@
 # Beleza Pura - Salão de Beleza
 
-Este projeto consiste em um site de página única para um salão de beleza localizado na Vila Formosa - São Paulo/SP. A empresa não tinha uma presença online, uma vez que o salão não tinha um site para apresentar seus serviços e atrair clientes. A plataforma oferece uma forma simples e eficiente de comunicação com os clientes, destacando os serviços oferecidos, informações de contato e localização.
+Este projeto consiste em um site de página unica para um salão de beleza localizado na Vila Formosa - São Paulo/SP. A empresa não tinha uma presença online, uma vez que o salão não tinha um site para apresentar seus serviços e atrair clientes. A plataforma oferece uma forma simples e eficiente de comunicação com os clientes, destacando os serviços oferecidos, informações de contato e localização.
 
 ## Tecnologias Utilizadas
 
