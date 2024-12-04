@@ -1,0 +1,1055 @@
+/* Estilos gerais */
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ================== INICIO MENU PRINCIPAL ================== */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 80px;
+  height: 110px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  top: 0;
+  z-index: 1000;
+}
+
+/* Estilo para a imagem do logo */
+.logo {
+  height: 150px; /* Ajuste conforme necessário, entre 50px e 60px */
+  width: auto;
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+/* Estilo para o menu de navegação no desktop */
+.nav-links {
+  list-style-type: none;
+  display: flex; /* Exibe os itens do menu em linha no desktop */
+  gap: 40px; /* Espaçamento entre os itens do menu */
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+/* Estilo para os itens de menu */
+.nav-links li {
+  margin: 0;
+}
+
+.links-menu {
+  text-decoration: none;
+  color: #4a4a4a;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  text-shadow: 2px 2px 4px rgba(247, 245, 245, 0.6);
+}
+
+.links-menu:hover {
+  color: #3e645d;
+}
+
+.agendar-btn {
+  text-decoration: none;
+  color: white; /* Cor do texto branco apenas para o botão "Agendar" */
+  background-color: #4e7d74; /* Cor de fundo opcional */
+  padding: 8px 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: background-color 0.9s ease;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.agendar-btn .whatsapp-icon {
+  margin-left: 4px; /* Aumenta o espaço entre o texto e o ícone */
+  width: 20px; /* Ajuste o tamanho da imagem conforme necessário */
+  height: 20px; /* Ajuste o tamanho da imagem conforme necessário */
+}
+
+.agendar-btn:hover {
+  background-color: #3e645d; /* Cor mais escura ao passar o mouse */
+  transform: scale(1.1); /* Aumenta o tamanho para 110% */
+}
+
+/* Estilo do botão hamburguer - oculto no desktop */
+.hamburger {
+  display: none; /* Oculta o botão no desktop */
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #4a4a4a;
+}
+
+@media (max-width: 768px) {
+  /* Exibe o botão de menu hamburguer em telas pequenas */
+  .hamburger {
+    display: block;
+  }
+
+  /* Oculta o menu de navegação completo */
+  .nav-links {
+    display: none; /* Oculta o menu padrão em telas pequenas */
+    flex-direction: column; /* Mantém o menu em coluna por padrão */
+    position: absolute; /* Permite que o submenu se sobreponha */
+    top: 70px; /* Alinha abaixo do cabeçalho */
+    left: 0;
+    width: 100%; /* Largura total para o submenu */
+    background-color: #ffffff; /* Fundo do submenu */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 999; /* Garante que o submenu fique acima de outros elementos */
+  }
+
+  /* Exibe o menu quando a classe 'active' é adicionada */
+  .nav-links.active {
+    display: flex;
+    flex-direction: row; /* Muda a direção dos itens para linha */
+    justify-content: center;
+    align-items: center; /* Alinha verticalmente */
+    margin-top: -6px;
+    gap: 0;
+  }
+
+  .nav-links.active li {
+    margin: 0 10px; /* Espaçamento entre os itens */
+  }
+
+  /* Ajusta a logo para centralizar e reduzir tamanho */
+  .logo {
+    height: 40px;
+  }
+
+  /* Alinha os itens do menu verticalmente */
+  .nav-links li {
+    display: inline; /* Mantém os itens do menu em linha */
+  }
+
+  /* Tamanho dos menus apenas no responsivo */
+  .nav-links li a {
+    font-size: 14px;
+  }
+
+  /* Ajuste para o botão Agendar em telas pequenas */
+  .agendar-btn {
+    width: 70%;
+    text-align: center;
+    justify-content: center;
+    margin: 10px 0;
+  }
+}
+/* ================== FIM MENU PRINCIPAL ================== */
+/* ================== INICIO SESSÃO 1 - BANNER PRINCIPAL ================== */
+.banner {
+  position: relative; /* Permite que a sobreposição seja posicionada corretamente */
+  background-image: url("/public/img/banner-principal.webp"); /* Caminho da sua imagem */
+  background-size: cover; /* Faz a imagem de fundo cobrir toda a área */
+  background-position: center; /* Centraliza a imagem de fundo */
+  height: 600px; /* Altura do banner */
+  display: flex; /* Usar flexbox para centralizar o conteúdo */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  text-align: center; /* Centraliza o texto */
+  color: #ffffff; /* Cor do texto */
+  padding: 20px; /* Espaçamento interno */
+}
+
+.banner-overlay {
+  position: absolute; /* Posiciona a sobreposição de forma absoluta */
+  top: 0; /* Alinha ao topo */
+  left: 0; /* Alinha à esquerda */
+  right: 0; /* Alinha à direita */
+  bottom: 0; /* Alinha à parte inferior */
+  background-color: rgba(0, 0, 0, 0.5); /* Preto com 50% de opacidade */
+  z-index: 1; /* Coloca a sobreposição acima da imagem, mas abaixo do conteúdo */
+}
+
+.banner-content {
+  position: relative; /* Posiciona o conteúdo de forma relativa para que fique acima da sobreposição */
+  z-index: 2; /* Garante que o conteúdo fique acima da sobreposição */
+}
+
+.titulo-banner {
+  font-size: 3rem;
+  text-shadow: 2px 5px 4px rgba(22, 47, 40, 3.6);
+}
+
+.subtitulo-banner {
+  font-size: 1.1rem;
+  font-weight: lighter;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.banner-btn {
+  display: inline-block; /* Faz o botão ocupar apenas o espaço necessário */
+  margin-top: 20px;
+  padding: 12px 40px; /* Espaçamento interno do botão */
+  background-color: #4e7d74; /* Cor de fundo do botão */
+  color: #ffffff; /* Cor do texto do botão */
+  text-decoration: none; /* Remove sublinhado */
+  border-radius: 5px; /* Bordas arredondadas */
+  transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.banner-btn:hover {
+  background-color: #3e645d; /* Cor do botão ao passar o mouse */
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 400px; /* Reduz a altura do banner em telas menores */
+    padding: 10px; /* Diminui o espaçamento interno */
+  }
+
+  .titulo-banner {
+    font-size: 2rem;
+  }
+
+  .subtitulo-banner {
+    font-size: 1rem;
+  }
+
+  .banner-btn {
+    margin-top: 15px;
+  }
+
+  .banner-btn span {
+    display: inline-block; /* Garante que o texto não cause problemas de alinhamento */
+    font-size: 14px; /* Tamanho da fonte do texto dentro do botão */
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    height: 300px; /* Reduz ainda mais a altura do banner */
+  }
+
+  .titulo-banner {
+    font-size: 1.6rem;
+  }
+
+  .subtitulo-banner {
+    font-size: 0.7rem;
+  }
+
+  .banner-btn {
+    margin-top: 15px;
+  }
+
+  .banner-btn span {
+    display: inline-block; /* Garante que o texto não cause problemas de alinhamento */
+    font-size: 13px; /* Tamanho da fonte do texto dentro do botão */
+  }
+
+  .banner-content {
+    display: flex; /* Usa flexbox para centralizar */
+    flex-direction: column; /* Alinha itens em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Garante que o texto fique centralizado */
+    height: 50%; /* Garante que o conteúdo utilize toda a altura do banner */
+  }
+}
+/* ================== FIM SESSÃO 1 - BANNER PRINCIPAL ================== */
+/* ================== INICIO SESSÃO 2 - BEM VINDO AO BELEZA PURA ================== */
+.bem-vindo {
+  display: flex; /* Usar flexbox para a disposição das colunas */
+  justify-content: space-between; /* Espaço entre as colunas */
+  padding: 20px; /* Espaçamento interno */
+  margin-top: 30px;
+  margin-left: 80px;
+  align-items: center;
+}
+
+.bem-vindo-coluna {
+  flex: 1; /* Faz com que cada coluna ocupe um espaço igual */
+  padding: 10px 10px 80px; /* Espaçamento interno para as colunas */
+}
+
+.titulo-bem-vindo {
+  margin: auto;
+  font-size: 19px;
+  color: #2d5a4e;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+.titulo-ao-beleza-pura {
+  margin: auto;
+  margin-top: 5px;
+  font-size: 36px;
+  color: #2d5a4e;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+.paragrafo-bem-vindo {
+  color: #2d5a4e;
+  text-align: justify;
+  line-height: 1.5rem;
+  padding: 10px 60px 10px 0px;
+}
+
+/* Estilo para a imagem */
+.direita img {
+  max-width: 100%; /* Limita a largura máxima da imagem para 100% do contêiner pai */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Permite centralizar a imagem */
+  margin: 0 auto; /* Centraliza a imagem na coluna */
+  border-radius: 50%;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .bem-vindo {
+    flex-direction: column; /* Muda para coluna em telas menores */
+    align-items: center; /* Centraliza as colunas */
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .bem-vindo-coluna {
+    width: 100%; /* Cada coluna ocupa toda a largura em telas menores */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .titulo-bem-vindo,
+  .titulo-ao-beleza-pura {
+    text-align: left;
+  }
+
+  .paragrafo-bem-vindo {
+    padding: 0px;
+  }
+
+  .direita img {
+    max-width: 90%; /* Ajusta a largura da imagem para 90% em telas menores */
+  }
+}
+/* ================== FIM SESSÃO 2 - BEM VINDO AO BELEZA PURA ================== */
+/* ================== INICIO SESSAO 3 - SERVIÇOS BELEZA PURA ================== */
+.sessao-servicos {
+  background-color: #f7f2e7; /* Cor de fundo */
+  padding: 50px 71px 71px 105px; /* Espaçamento interno */
+  display: flex;
+  justify-content: center;
+}
+
+.sessao-conteudo-servicos-coluna-esquerda,
+.sessao-conteudo-servicos-coluna-direita {
+  flex: 1; /* Divide o espaço igualmente entre as colunas */
+}
+
+.sessao-conteudo-servicos-coluna-esquerda {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espaçamento entre as caixinhas */
+}
+
+.servicos-coluna-esquerda {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 20px; /* Espaçamento vertical entre as caixinhas */
+}
+
+/* Tamanhos crescentes para as caixas */
+.caixinha-servicos-coluna-esquerda:nth-child(1) {
+  width: 50%;
+}
+
+.caixinha-servicos-coluna-esquerda:nth-child(2) {
+  width: 60%;
+}
+
+.caixinha-servicos-coluna-esquerda:nth-child(3) {
+  width: 70%;
+}
+
+.caixinha-servicos-coluna-esquerda {
+  background-color: #333333; /* Cor do retângulo */
+  color: #ffffff; /* Cor do texto */
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px; /* Bordas arredondadas */
+  width: 100%; /* Faz com que cada caixa ocupe 100% do contêiner */
+  max-width: 82%; /* Impede que ultrapasse a largura do contêiner */
+}
+
+.caixinha-servicos-coluna-esquerda img {
+  width: 100px; /* Largura da imagem em telas menores */
+  height: 90px;
+  border-radius: 10px;
+  margin-right: 15px;
+  flex-shrink: 0; /* Mantém o tamanho da imagem */
+}
+
+.titulo-servicos-coluna-esquerda {
+  flex-grow: 1;
+  flex-basis: 0; /* Permite que o texto ocupe o espaço restante */
+  min-width: 0; /* Impede o texto de forçar a largura */
+}
+
+.titulo-servicos-coluna-esquerda h3 {
+  font-size: 16px;
+  line-height: 1.2;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.titulo-servicos-coluna-esquerda p {
+  font-size: 14px;
+  line-height: 1.2;
+  margin: 0;
+  text-align: left;
+}
+
+.sessao-conteudo-servicos-coluna-direita {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.titulo-servicos-coluna-direita {
+  margin: 0;
+  font-size: 2rem;
+  color: #2d5a4e;
+  text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.paragrafo-servicos-coluna-direita {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5rem;
+  text-align: justify;
+  color: #4a4a4a;
+}
+
+.botao-servicos {
+  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 35px;
+  background-color: #4e7d74;
+  color: #ffffff;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.botao-servicos:hover {
+  background-color: #3e645d; /* Cor do botão ao passar o mouse */
+}
+
+/* Responsividade coluna esquerda*/
+@media (max-width: 768px) {
+  .sessao-servicos {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px; /* Ajusta o padding para garantir que não haja mais margens desiguais */
+    margin: 0 auto; /* Centraliza a seção em relação ao contêiner */
+  }
+
+  .servicos-coluna-esquerda {
+    display: flex; /* Garante que as colunas fiquem lado a lado */
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center; /* Garante que as colunas fiquem centralizadas */
+    width: 100%; /* Assegura que a largura da coluna ocupe 100% */
+    margin-bottom: 30px;
+  }
+
+  .caixinha-servicos-coluna-esquerda {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box; /* Impede que o padding aumente a largura */
+  }
+
+  /* Deixando a caixinha de serviços com o mesmo tamanho ao diminuir a tela */
+  .caixinha-servicos-coluna-esquerda img {
+    width: 100%; /* Faz a imagem ocupar 100% da largura disponível dentro da caixinha */
+    margin: 0 0 10px; /* Espaçamento abaixo da imagem */
+  }
+
+  .caixinha-servicos-coluna-esquerda:nth-child(1) {
+    width: 35%;
+  }
+
+  .caixinha-servicos-coluna-esquerda:nth-child(2) {
+    width: 35%;
+  }
+
+  .caixinha-servicos-coluna-esquerda:nth-child(3) {
+    width: 35%;
+  }
+  .caixinha-servicos-coluna-esquerda:nth-child(4) {
+    width: 35%;
+  }
+
+  .titulo-servicos-coluna-esquerda h3 {
+    margin-top: 5px;
+    font-size: 15px;
+    line-height: 1.5rem;
+    text-align: left;
+  }
+
+  .titulo-servicos-coluna-direita {
+    font-size: 2rem;
+  }
+
+  .sessao-conteudo-servicos-coluna-direita {
+    margin-top: 20px;
+  }
+
+  /* Invertendo a ordem das colunas na tela menor */
+  .sessao-conteudo-servicos-coluna-esquerda {
+    order: 2; /* Coluna da esquerda vai para baixo */
+  }
+
+  .sessao-conteudo-servicos-coluna-direita {
+    order: 1; /* Coluna da direita vai para cima */
+  }
+
+  /* ocultando o botão para telas menores */
+  .botao-servicos {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .sessao-conteudo-servicos-coluna-esquerda {
+    flex-direction: row;
+  }
+
+  .servicos-coluna-esquerda {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .caixinha-servicos-coluna-esquerda:nth-child(1) {
+    width: 40%;
+  }
+
+  .caixinha-servicos-coluna-esquerda:nth-child(2) {
+    width: 40%;
+  }
+
+  .caixinha-servicos-coluna-esquerda:nth-child(3) {
+    width: 40%;
+  }
+  .caixinha-servicos-coluna-esquerda:nth-child(4) {
+    width: 40%;
+  }
+
+  .titulo-servicos-coluna-direita {
+    font-size: 1.4rem;
+  }
+
+  /* ocultando o botão para telas menores */
+  .botao-servicos {
+    display: none;
+  }
+}
+/* ================== FIM SESSAO 3 - SERVIÇOS BELEZA PURA ================== */
+/* ================== INICIO SESSAO 4 - LOCALIZAÇÃO E CONTATO ================== */
+/* Estilização principal da seção de contato */
+/* Estilos principais da seção */
+.sessao-onde-estamos {
+  display: flex; /* Disposição em duas colunas */
+  justify-content: space-between;
+  padding: 20px;
+  margin: 30px 80px;
+  align-items: flex-start;
+  gap: 41px; /* Espaço entre as colunas */
+  flex-wrap: wrap; /* Permite que as colunas quebrem para uma nova linha */
+}
+
+/* Coluna Esquerda */
+.onde-estamos {
+  flex: 1;
+  padding: 10px 11px 70px 0px;
+}
+
+.onde-estamos h1 {
+  font-size: 2rem;
+  color: #2d5a4e;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.icon img {
+  width: 40px; /* Ajusta o tamanho do ícone */
+  height: 40px;
+}
+
+.paragrafo-localizacao {
+  color: #4a4a4a;
+  text-align: justify;
+  line-height: 1.5rem;
+  padding: 10px 0;
+}
+
+.mapa-container {
+  max-width: 100%;
+  overflow: hidden; /* Evita a rolagem horizontal */
+  border-radius: 10px; /* Arredonda as bordas */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombreamento suave */
+}
+
+.mapa-container iframe {
+  width: 100%; /* Ocupa 100% da largura do contêiner */
+  height: 450px; /* Altura fixa, ajuste conforme necessário */
+  border: 0;
+  border-radius: 10px; /* Arredonda as bordas do iframe */
+}
+
+/* Coluna Direita */
+.onde-estamos-direita {
+  flex: 1;
+  margin-top: 9px;
+  padding: 10px 0px 10px 0px;
+}
+
+.titulos-e-subtitulos {
+  margin-top: 40px;
+}
+
+.titulo-entre-em-contato {
+  margin-top: 20px;
+  font-size: 2rem;
+  color: #2d5a4e;
+  text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.subtitulo-entre-em-contato {
+  font-size: 1.2rem;
+  color: #2d5a4e;
+  margin-bottom: 5px; /* Espaçamento entre subtítulo e parágrafo */
+}
+
+.paragrafo-onde-estamos {
+  color: #4a4a4a;
+  margin-top: 0px; /* Reduz a distância entre o parágrafo e o subtítulo */
+  line-height: 1.5rem;
+}
+
+.agendar-horario {
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+.titulo-agendar-horario {
+  margin-bottom: 10px; /* Reduz a distância abaixo do título */
+  font-size: 2rem;
+  color: #2d5a4e;
+  text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.paragrafo-agendar-horario {
+  margin-top: 0; /* Remove qualquer espaçamento superior do parágrafo */
+  color: #4a4a4a;
+  line-height: 1.5rem;
+}
+
+/* Botão de agendamento */
+.agendar-botao {
+  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 20px;
+  background-color: #4e7d74;
+  color: #ffffff;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.agendar-botao .whatsapp-icon {
+  margin-left: 8px; /* Espaço entre o texto e o ícone */
+  width: 20px;
+  height: 20px;
+}
+
+.agendar-botao:hover {
+  background-color: #3e655e;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .sessao-onde-estamos {
+    margin: 20px 40px;
+  }
+
+  .onde-estamos h1,
+  .titulo-entre-em-contato {
+    font-size: 1.8rem;
+  }
+
+  .subtitulo-entre-em-contato {
+    font-size: 1.1rem;
+  }
+
+  .imagem-google-maps {
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sessao-onde-estamos {
+    flex-direction: column; /* Colunas em uma só coluna */
+    margin: 20px;
+    padding: 0px;
+  }
+
+  .onde-estamos,
+  .onde-estamos-direita {
+    padding: 0px;
+  }
+
+  .onde-estamos h1,
+  .titulo-entre-em-contato {
+    font-size: 2rem;
+  }
+
+  .subtitulo-entre-em-contato {
+    font-size: 1rem;
+  }
+
+  .imagem-google-maps {
+    height: 300px;
+  }
+
+  .agendar-botao {
+    width: 100%; /* Botão ocupa a largura completa em telas menores */
+    justify-content: center;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .onde-estamos h1,
+  .titulo-entre-em-contato {
+    font-size: 1.4rem;
+  }
+
+  .subtitulo-entre-em-contato {
+    font-size: 0.9rem;
+  }
+
+  .paragrafo-onde-estamos,
+  .paragrafo-localizacao {
+    font-size: 0.9rem;
+  }
+
+  .imagem-google-maps {
+    height: 250px;
+  }
+
+  .agendar-horario {
+    margin-top: 40px;
+  }
+  .titulo-agendar-horario {
+    font-size: 1.4rem;
+  }
+}
+/* ================== FIM SESSAO 4 - LOCALIZAÇÃO E CONTATO ================== */
+/* ================== INICIO SESSAO 5 - DEPOIMENTOS DOS CLIENTES ================== */
+/* Estilos da seção de depoimentos */
+.depoimentos {
+  text-align: center;
+  padding: 30px 20px 65px 20px; /* Aumenta o padding superior para espaçamento */
+  background-color: #f9f9f9;
+}
+
+.depoimentos h2 {
+  font-size: 2rem;
+  color: #2d5a4e;
+  margin-bottom: 50px;
+  text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Contêiner dos depoimentos */
+.depoimentos-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+}
+
+/* Estilos dos quadrantes */
+.depoimento {
+  background-color: #f7f2e7;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  height: 200px;
+  text-align: left;
+}
+
+.cliente-foto {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+.depoimento h3 {
+  font-size: 1.2rem;
+  color: #2d5a4e;
+  margin: 0;
+}
+
+.cliente-avaliacoes {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 5px;
+}
+
+.estrelas {
+  font-size: 1.2rem;
+  color: #ffd700; /* Dourado para as estrelas */
+  margin-top: -10px;
+  margin-left: 60px;
+}
+
+.cliente-comentario {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 15px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .depoimentos-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .depoimento {
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .depoimentos h2 {
+    text-align: left;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .depoimentos h2 {
+    font-size: 1.4rem;
+  }
+}
+/* ================== FIM SESSAO 5 - DEPOIMENTOS DOS CLIENTES ================== */
+/* ================== INICIO SESSÃO 6 - BANNER AGENDAR HORÁRIO ================== */
+.sessao-banner-horário {
+  position: relative;
+  background-image: url("/public/img/banner-agendamento.png");
+  background-size: cover; /* Ajusta a imagem para cobrir toda a seção */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat;
+  height: 60vh; /* Altura total da viewport, pode ajustar conforme necessário */
+}
+
+/* Sobreposição */
+.sessao-banner-sobreposicao {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Ajusta a opacidade para criar um efeito de sobreposição */
+  z-index: 1;
+}
+
+/* Conteúdo dentro do banner */
+.sessao-banner-conteudo {
+  position: relative;
+  z-index: 2; /* Garante que o conteúdo fique acima da imagem e da sobreposição */
+  color: #fff; /* Define o texto em branco para melhor contraste */
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  height: 100%; /* Ocupa toda a altura do banner */
+}
+
+.sessao-banner-titulo {
+  font-size: 2.5em;
+  margin: 0 0 20px 0; /* Adiciona espaçamento abaixo do título */
+  text-shadow: 2px 5px 4px rgba(22, 47, 40, 3.6);
+}
+
+.sessao-banner-subtitulo {
+  font-size: 1.2em;
+  margin: 0 0 20px 0; /* Adiciona espaçamento abaixo do subtítulo */
+  font-weight: 200;
+  text-shadow: 2px 5px 4px rgba(22, 47, 40, 3.6);
+}
+
+.banner-button {
+  padding: 15px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #2d5a4e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  margin-top: 20px; /* Adiciona espaçamento acima do botão */
+}
+
+.banner-button:hover {
+  background-color: #3e645d; /* Muda a cor ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .sessao-banner-titulo {
+    font-size: 2em;
+  }
+
+  .sessao-banner-subtitulo {
+    font-size: 1.2em;
+  }
+
+  .banner-button {
+    font-size: 0.9em;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sessao-banner-titulo {
+    font-size: 1.5em;
+  }
+
+  .sessao-banner-subtitulo {
+    font-size: 1em;
+  }
+
+  .banner-button {
+    font-size: 0.8em;
+    padding: 6px 12px;
+  }
+}
+/* ================== FIM SESSÃO 6 - BANNER AGENDAR HORÁRIO ================== */
+/* ================== INICIO RODAPÉ  ================== */
+footer {
+  background-color: #333333;
+  color: white;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.container-rodape {
+  display: flex;
+  justify-content: space-between; /* Distribui as colunas com espaço igual */
+  max-width: 1200px;
+  margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+.coluna-logo-rodape {
+  width: 24%; /* Cada coluna ocupa 22% do espaço disponível */
+  text-align: left;
+}
+
+.logo-rodape {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-shadow: 2px 5px 4px rgba(22, 47, 40, 3.6);
+}
+
+.paragrafo-logo-rodape {
+  font-size: 0.9rem;
+  line-height: 1.2;
+  margin-top: -5px;
+  text-shadow: 2px 5px 4px rgba(22, 47, 40, 3.6);
+}
+
+.coluna-rodape {
+  width: 24%; /* Cada coluna ocupa 24% do espaço disponível */
+  text-align: left;
+  margin-top: 15px;
+}
+
+.informacoes-rodape {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-shadow: 2px 5px 4px rgba(22, 47, 40, 3.6);
+}
+
+.paragrafo-informacoes-rodape {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .container-rodape {
+    flex-direction: column; /* Alinha as colunas em uma única coluna em telas pequenas */
+    align-items: center; /* Centraliza o conteúdo */
+  }
+
+  .coluna-logo-rodape {
+    width: 100%; /* Cada coluna ocupa 22% do espaço disponível */
+    text-align: left;
+  }
+
+  .coluna-rodape {
+    width: 100%; /* Cada coluna ocupa 100% da largura */
+    margin-bottom: 20px; /* Espaçamento entre as colunas */
+  }
+}
+
+.copyright {
+  width: 100%;
+  background-color: #2b2b2b; /* Fundo um pouco mais escuro para diferenciar */
+  color: #ccc; /* Cor do texto em cinza claro */
+  text-align: center; /* Centraliza o texto */
+  padding: 1px 0px; /* Espaçamento interno */
+  font-size: 14px; /* Tamanho de fonte menor */
+}
+
+.desenvolvido-por {
+  font-size: 0.7rem;
+}
+/* ================== FIM RODAPÉ  ================== */
