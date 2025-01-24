@@ -30,18 +30,18 @@ As principais funcionalidades do site são:
 
 **Responsividade e Design Adaptável:** O site é totalmente responsivo, garantindo uma experiência de navegação otimizada tanto em dispositivos móveis quanto em desktops, com um design que se ajusta automaticamente às diferentes telas.
 
-# **Acesse o projeto através do link:** 
+## Acesse o projeto através do link:** 
 
 https://enrico-collab.github.io/beleza-pura/
 
-# Como rodar o projeto
+## Como rodar o projeto
 
 1. Clone o repositório;
 2. Navegue até a pasta do projeto (beleza-pura);
 3. Instale as dependências (npm install);
 4. Execute o projeto localmente (npm start);
 
-# Autor
+## Autor
 Enrico Clemente Amoroso
 
 
@@ -86,11 +86,11 @@ The main features of the website are:
 
 **Responsiveness and Adaptive Design::** The site is fully responsive, ensuring an optimized browsing experience on both mobile devices and desktops, with a design that automatically adjusts to different screen sizes.
 
-# **Access the project through the link::** 
+## Access the project through the link::** 
 
 https://enrico-collab.github.io/beleza-pura/
 
-# How to run the project
+## How to run the project
 Como rodar o projeto
 
 1. Clone the repository;
@@ -98,7 +98,7 @@ Como rodar o projeto
 3. Install the dependencies (npm install);
 4. Run the project locally (npm start);
 
-# Author
+## Author
 Enrico Clemente Amoroso
 
 
