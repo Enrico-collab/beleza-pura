@@ -6,6 +6,8 @@ Este projeto consiste em um site de página unica para um salão de beleza local
 
 As tecnologias utilizadas neste projeto incluem:
 
+**Figma:** Utilizado para a prototipagem do layout e design do site. Essencial para planejar a estrutura e a interface, garantindo uma experiência visual e interativa de acordo com as melhores práticas de design.
+
 **HTML e CSS:** Para estruturar e estilizar a página, criando uma interface simples e responsiva.
 
 **React.js:** Utilizado para construir a interface interativa e modular, proporcionando uma experiência dinâmica ao usuário.
